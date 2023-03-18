@@ -5,6 +5,29 @@
 #Interface graphique
 
 #Calcul du tableau
+import random
+def nouv_grille():# Ca créer une grille
+    tabl = []
+    for i in range(4):
+        for j in range(4):
+        tabl.append([0])
+
+    # Ajoute les 2 au hasard
+    ajoute_nombre(tabl)
+    ajoute_nombre(tabl)
+    return tab1
+
+def ajoute_nombre(tabl):  #Il va trouver toutes les cases vides
+    l_0=[]  #<---  touts les 0 presents dans la matrice
+    for i in range(4):
+        for j in range(4):
+            if grille[i][j] == 0:
+                l_0.append((i,j))
+    # On choisit une case au hasard parmis les 0
+    if l_0:   #verifier si il esxiste
+        i, j = random.choice(l_0)
+        valeur = random.choice([2, 4])
+        tabl[i][j] = valeur
 
 def calcul(tabl, move):
 
