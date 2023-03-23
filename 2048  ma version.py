@@ -139,3 +139,46 @@ def compress(mat):
  
     # retour de la nouvelle matrice compressée et la variable de changement.
     return nouvelle_mat, change
+#fonction pour fusionner les cellules dans la matrice après compression
+def fusion(mat):
+     
+    change = False
+     
+    for i in range(4):
+        for j in range(3):
+ 
+            # si la cellule actuelle a la même valeur que la cellule suivante de la ligne et qu'elles
+            # ne sont pas vides, alors
+            if(mat[i][j] == mat[i][j + 1] and mat[i][j] != 0):
+ 
+                # double la valeur de la cellule actuelle et vide la cellule suivante
+                mat[i][j] = mat[i][j] * 2
+                mat[i][j + 1] = 0
+ 
+                # Mettre true à la variable booléenne indiquant que la nouvelle grille après la fusion est
+                # différente.
+                change = True
+ 
+    return mat, change
+
+
+# fonction permettant d'inverser la matrice signifie inverser le contenu de
+# chaque ligne 
+def reverse(mat):
+    nouvelle_mat =[]
+    for i in range(4):
+        nouvelle_mat.append([])
+        for j in range(4):
+            nouvelle_mat[i].append(mat[i][3 - j])
+    return nouvelle_mat
+ 
+#fonction pour obtenir la transpositiondela matrice signifie qu'il faut interchanger
+# lignes et colonnes
+def transposition(mat):
+    nouv_mat = []
+    for i in range(4):
+        nouv_mat.append([])
+        for j in range(4):
+            nouv_mat[i].append(mat[j][i])
+    return nouv_mat
+ 
