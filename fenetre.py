@@ -20,6 +20,9 @@ for i in range(4):
         color = "gray80"
         canvas.create_rectangle((i*largeur_case, j*hauteur_case),
         ((i+1)*largeur_case, (j+1)*hauteur_case), fill=color)
+        canvas.create_text(i*largeur_case+62, j*hauteur_case+62, text="0", font=("helvetica", "30"), tags="hello")
+
+m=[[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]]
 
 bouton1 = tk.Button(fenetre, text="Nouveau Partie", font=("helvetica", "10"))
 bouton1.grid(column=1, row=0)
