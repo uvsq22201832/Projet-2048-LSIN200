@@ -130,7 +130,7 @@ def transposition(mat):
         for j in range(3):
             nouv_mat[i].append(mat[j][i])
     return nouv_mat
-
+# Des doutes sur le fonctionnement de cette fonction
 #Il reste à faire les foncions de mise à jour de la matrice lorsque l'on bouge haut/bas/gauche/droite
 
 #def move_up
