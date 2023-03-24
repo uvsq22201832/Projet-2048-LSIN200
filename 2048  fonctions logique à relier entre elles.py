@@ -118,7 +118,7 @@ def fusion(mat): #à compléter avec def compress
                 # double la valeur de la cellule actuelle et vide la cellule suivante
                 mat[i][j] = mat[i][j] * 2
                 mat[i][j + 1] = 0
-            
+            #tromper de sens de fusion
     return mat
 
 #fonction pour obtenir la transposition de la matrice signifie qu'il faut interchanger
