@@ -4,7 +4,7 @@ fenetre = tk.Tk()
 fenetre.title("2048") 
 
 label1 = tk.Label(fenetre, text="2048", font = ("helvetica", "30")) 
-label1.grid(column=0, row=0,rowspan=4)
+label1.grid(column=0, row=0)
 
 
 HEIGHT = 500
@@ -13,7 +13,7 @@ largeur_case = WIDTH // 4
 hauteur_case = HEIGHT // 4
 
 canvas = tk.Canvas(fenetre, bg="gray", height=HEIGHT, width=WIDTH)
-canvas.grid()
+canvas.grid(column=0, row=1, rowspan=4)
 
 for i in range(4):
     for j in range(4):
