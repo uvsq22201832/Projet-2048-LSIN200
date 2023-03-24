@@ -187,4 +187,3 @@ def transposition(mat):
 
 #Il restera à relier les fonctions entre elles et à faire la partie visuelle/tkinter
 #Utiliser fenetre.py
- 
