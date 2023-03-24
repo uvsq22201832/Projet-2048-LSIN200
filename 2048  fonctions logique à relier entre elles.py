@@ -34,7 +34,7 @@ tableau.mainloop()
 
 ###FIN BROUILLON###
 
-# Partie "Logistique"
+# Les outils qu'on va utiliser pour faire le 2048
 import random
 
 def debut_2048(): # Fonction pour initialiser/commencer le jeu.
@@ -160,7 +160,6 @@ def fusion(mat):
                 change = True
  
     return mat, change
-
 
 #fonction pour obtenir la transpositiondela matrice signifie qu'il faut interchanger
 # lignes et colonnes
