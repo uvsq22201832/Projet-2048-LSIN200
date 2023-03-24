@@ -105,7 +105,7 @@ def état_de_la_partie(mat):
     # Sinon si toute aucunes cases n'est vide et qu'aucun déplacement n'est possible alors
     return 'Tu as perdu !'
 
-
+#fonction pour fusionner les cellules dans la matrice après compression
 def fusion(mat):
      
     change = False
@@ -127,7 +127,7 @@ def fusion(mat):
  
     return mat, change
 
-#fonction pour obtenir la transpositiondela matrice signifie qu'il faut interchanger
+#fonction pour obtenir la transposition de la matrice signifie qu'il faut interchanger
 # lignes et colonnes
 def transposition(mat):
     nouv_mat = []
