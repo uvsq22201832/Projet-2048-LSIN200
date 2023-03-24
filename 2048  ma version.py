@@ -181,4 +181,13 @@ def transposition(mat):
         for j in range(4):
             nouv_mat[i].append(mat[j][i])
     return nouv_mat
+
+#Il reste à faire les foncions de mise à jour de la matrice lorsque l'on bouge haut/bas/gauche/droite
+
+#def move_up
+#def move_down
+#def move_left
+#def move_right
+
+#Il restera à relier les fonctions entre elles et à faire la partie visuelle/tkinter
  
