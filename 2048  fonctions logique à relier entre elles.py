@@ -162,16 +162,6 @@ def fusion(mat):
     return mat, change
 
 
-# fonction permettant d'inverser la matrice signifie inverser le contenu de
-# chaque ligne 
-def reverse(mat):
-    nouvelle_mat =[]
-    for i in range(4):
-        nouvelle_mat.append([])
-        for j in range(4):
-            nouvelle_mat[i].append(mat[i][3 - j])
-    return nouvelle_mat
- 
 #fonction pour obtenir la transpositiondela matrice signifie qu'il faut interchanger
 # lignes et colonnes
 def transposition(mat):
@@ -188,6 +178,8 @@ def transposition(mat):
 #def move_down
 #def move_left
 #def move_right
+
+#def reverese: fonction permettant d'inverser la matrice signifie inverser le contenu de chaque ligne 
 
 #def score
 #def savegame
