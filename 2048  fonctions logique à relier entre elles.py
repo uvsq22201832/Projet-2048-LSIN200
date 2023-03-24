@@ -106,9 +106,9 @@ def état_de_la_partie(mat):
     return 'Tu as perdu !'
 
 #fonction pour fusionner les cellules dans la matrice après compression
-def fusion(mat):
+def fusion(mat): #à compléter avec def compress
      
-    change = False
+    
      
     for i in range(4):
         for j in range(3):
@@ -121,11 +121,9 @@ def fusion(mat):
                 mat[i][j] = mat[i][j] * 2
                 mat[i][j + 1] = 0
  
-                # Mettre true à la variable booléenne indiquant que la nouvelle grille après la fusion est
-                # différente.
-                change = True
+               
  
-    return mat, change
+    return mat
 
 #fonction pour obtenir la transposition de la matrice signifie qu'il faut interchanger
 # lignes et colonnes
