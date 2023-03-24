@@ -191,7 +191,7 @@ def transposition(mat):
 
 #def score
 #def savegame
-#ef exit
+#def exit
 #def nouv_partie
 
 #Il restera à relier les fonctions entre elles et à faire la partie visuelle/tkinter
