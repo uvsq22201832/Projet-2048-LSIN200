@@ -108,7 +108,7 @@ def état_de_la_partie(mat):
 #fonction pour fusionner les cellules dans la matrice après compression
 def fusion(mat): #à compléter avec def compress
      
-    for i in range(4):
+    for i in range(3):
         for j in range(3):
  
             # si la cellule actuelle a la même valeur que la cellule suivante de la ligne et qu'elles
@@ -125,9 +125,9 @@ def fusion(mat): #à compléter avec def compress
 # lignes et colonnes
 def transposition(mat):
     nouv_mat = []
-    for i in range(4):
+    for i in range(3):
         nouv_mat.append([])
-        for j in range(4):
+        for j in range(3):
             nouv_mat[i].append(mat[j][i])
     return nouv_mat
 
