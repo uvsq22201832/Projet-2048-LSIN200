@@ -1,5 +1,14 @@
 import tkinter as tk
 
+def score(): #pour le boutton exit
+    fenetre2=tk.Tk()
+    fenetre2.title("votre partie est finie")
+    label2=tk.Label(fenetre2,text="Votre score est de:",font = ("helvetica", "30"))
+    label2.grid(column=0,row=0)
+    label3=tk.Label(fenetre2,text=somme_valeur_grille(table))
+    label3.grid(column=0,row=1)
+    canvas2=tk.Canvas(fenetre2,bg="gray", height=500, width=500)
+
 fenetre = tk.Tk() 
 fenetre.title("2048") 
 
