@@ -1,7 +1,7 @@
 import tkinter as tk
 from bouttons import *
 
-def score(): #pour le boutton exit
+def score(): #pour le boutton exit, la fonction va donc montrer le score et la table sur une nouvelle fenetre (elle est pas finit)
     fenetre2=tk.Tk()
     fenetre2.title("votre partie est finie")
     label2=tk.Label(fenetre2,text="Votre score est de:",font = ("helvetica", "30"))
