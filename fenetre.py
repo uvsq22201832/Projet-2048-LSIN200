@@ -1,4 +1,5 @@
 import tkinter as tk
+from bouttons import *
 
 def score(): #pour le boutton exit
     fenetre2=tk.Tk()
@@ -33,16 +34,16 @@ for i in range(4):
 
 m=[[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]]
 
-bouton1 = tk.Button(fenetre, text="Nouvelle Partie", font=("helvetica", "10"))
+bouton1 = tk.Button(fenetre, text="Nouvelle Partie", font=("helvetica", "10"),command=nouvelle_partie)
 bouton1.grid(column=1, row=0)
 
-bouton2 = tk.Button(fenetre, text="Exit", font=("helvetica", "10"))
+bouton2 = tk.Button(fenetre, text="Exit", font=("helvetica", "10"),command=score)
 bouton2.grid(column=1, row=1)
 
-bouton3 = tk.Button(fenetre, text="Save", font=("helvetica", "10"),command=sauvegarder) #fonction sauvegarder pas encore faite 
+bouton3 = tk.Button(fenetre, text="Save", font=("helvetica", "10"),command=sauvegarder) 
 bouton3.grid(column=1, row=2)
 
-bouton4 = tk.Button(fenetre, text="Load", font=("helvetica", "10"),command=charger) #pareil pr la fonction charger
+bouton4 = tk.Button(fenetre, text="Load", font=("helvetica", "10"),command=charger)
 bouton4.grid(column=1, row=3)
 
 fenetre.mainloop()
