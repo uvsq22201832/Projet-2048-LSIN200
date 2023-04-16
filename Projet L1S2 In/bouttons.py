@@ -1,4 +1,4 @@
-from condition import *
+#from condition import *
 
 def nouvelle_partie():
     start()
