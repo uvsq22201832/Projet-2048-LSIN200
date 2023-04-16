@@ -1,3 +1,5 @@
+from condition import *
+
 def nouvelle_partie():
     start()
 
